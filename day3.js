@@ -4,3 +4,6 @@
 //   .reduce((accu, i) => accu + i, 0);
 
 // console.log(res34);
+
+for (var i = 0; i < 10; i++) {}
+console.log(i);

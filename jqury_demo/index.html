@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box-a {
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        background-color: #faa;
+      }
+      .box-b {
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        background-color: #0aa;
+      }
+      .product-title {
+        background-color: #000;
+        color: #ffffff;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-a">box-a</div>
+    <div class="box-b">box-b</div>
+    <div class="product-title">Instruction</div>
+    <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+      voluptatem molestiae harum delectus iste ducimus reiciendis aliquam
+      maiores quidem fuga, nulla tempore aliquid minima iure nesciunt temporibus
+      obcaecati corrupti quaerat.
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // test1
+        $(".box-a").dblclick(function () {
+          $(".box-b").toggle();
+        });
+        // demo1
+        $(".product-title").click(function () {
+          $(".content").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

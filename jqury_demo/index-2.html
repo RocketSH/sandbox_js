@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .controller {
+        display: block;
+        padding: 6px 10px;
+        color: white;
+        background-color: #000000;
+        width: 300px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .text {
+        width: 280px;
+        padding: 20px;
+        background-color: #cccccc;
+        text-align: center;
+      }
+      .text.x {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="controller controller1">Button</a>
+    <div class="text text1">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ea delectus
+      labore nemo, excepturi alias iure sit repellat sed, quod reprehenderit
+      exercitationem earum assumenda cupiditate dolore animi ipsa doloremque
+      praesentium?
+    </div>
+    <a href="#" class="controller controller2">Button</a>
+    <div class="text text2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ea delectus
+      labore nemo, excepturi alias iure sit repellat sed, quod reprehenderit
+      exercitationem earum assumenda cupiditate dolore animi ipsa doloremque
+      praesentium?
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".controller1").click(function () {
+          $(".text1").toggleClass("x");
+        });
+        $(".controller2").click(function () {
+          $(".text2").toggleClass("x");
+        });
+      });
+    </script>
+  </body>
+</html>
