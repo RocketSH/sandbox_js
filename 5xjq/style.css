@@ -1,12 +1,12 @@
-.hide {
+/* .hide {
   display: none;
+} */
+.wrapper {
+  border: 1px solid #000
 }
 
 .large {
-  font-size: 50px;
-  color: #fcc;
-
-
-  /* .wrapper {
-  border: 1px solid #000
+  font-size: 22px;
+  color: #ff0000;
+  text-decoration-line: line-through;
 }
