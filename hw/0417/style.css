@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+form {
+  display: inline-block;
+  margin: 50px 150px;
+  background-color: #ffa;
+}
+
+label {
+  margin: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin-left: 20px;
+}
+
+.text-center {
+  height: 200px;
+  width: 300px;
+  background-color: #0a0;
+}
